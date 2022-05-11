@@ -16,9 +16,11 @@ export default function EditJudge(){
 
 
     async function editJudge(){
-        fetch(`/judge/add/${carID}/${judgeID}/${name}/${judged}/${start}/${end}/${spent}/${average}`)
-                .then((res)=> res.json())
-                .catch((error) => console.log(error))
+        fetch(
+            `/judge/update/${carID}/${judgeID}/${name}/${judged}/${start}/${end}/${spent}/${average}`
+        )
+            .then((res) => res.json())
+            .catch((error) => console.log(error));
     }
 
     return(
