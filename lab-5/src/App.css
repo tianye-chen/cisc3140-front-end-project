@@ -47,3 +47,8 @@
 .nav-car{
   padding: 20px;
 }
+
+.car-item{
+  display: flex;
+}
+
