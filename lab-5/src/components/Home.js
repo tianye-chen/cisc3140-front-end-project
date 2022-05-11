@@ -1,9 +1,9 @@
 import React from "react";
 
 export default function Home(){
-    return(
+    return (
         <div>
-            <p>this is homepage</p>
+            <p>Homepage</p>
         </div>
-    )
+    );
 }

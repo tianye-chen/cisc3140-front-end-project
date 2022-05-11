@@ -21,38 +21,80 @@ export default function AddCar(){
                 .catch((error) => console.log(error))
     }
 
-    return(
-        <form className="add-form"
-            onSubmit={async e =>{
-                e.preventDefault()
-                await addCar()
-                navigate(origin)
-            }}>
+    return (
+        <form
+            className="add-form"
+            onSubmit={async (e) => {
+                e.preventDefault();
+                await addCar();
+                navigate(origin);
+            }}
+        >
             <label>
-                Timestamp:<input type="text" value={time} onChange={e=>setTime(e.target.value)} />
+                Timestamp:
+                <input
+                    type="text"
+                    value={time}
+                    onChange={(e) => setTime(e.target.value)}
+                />
             </label>
             <label>
-                Email:<input type="text" value={email} onChange={e=>setEmail(e.target.value)} />
+                Email:
+                <input
+                    type="text"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                />
             </label>
             <label>
-                Name:<input type="text" value={name} onChange={e=>setName(e.target.value)} />
+                Name:
+                <input
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                />
             </label>
             <label>
-                Year:<input type="number" value={year} onChange={e=>setYear(e.target.value)} />
+                Year:
+                <input
+                    type="number"
+                    value={year}
+                    onChange={(e) => setYear(e.target.value)}
+                />
             </label>
             <label>
-                Make:<input type="text" value={make} onChange={e=>setMake(e.target.value)} />
+                Make:
+                <input
+                    type="text"
+                    value={make}
+                    onChange={(e) => setMake(e.target.value)}
+                />
             </label>
             <label>
-                Model:<input type="text" value={model} onChange={e=>setModel(e.target.value)} />
+                Model:
+                <input
+                    type="text"
+                    value={model}
+                    onChange={(e) => setModel(e.target.value)}
+                />
             </label>
             <label>
-                Car ID:<input type="number" value={id} onChange={e=>setId(e.target.value)} />
+                Car ID:
+                <input
+                    type="number"
+                    value={id}
+                    onChange={(e) => setId(e.target.value)}
+                />
             </label>
             <label>
-                Judge ID:<input type="text" value={judgeId} onChange={e=>setJudgeId(e.target.value)} />
+                Judge ID:
+                <input
+                    type="text"
+                    value={judgeId}
+                    onChange={(e) => setJudgeId(e.target.value)}
+                />
             </label>
             <input type="submit" value="Submit" />
         </form>
-    )
+    );
 }

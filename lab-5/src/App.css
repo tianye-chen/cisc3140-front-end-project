@@ -52,3 +52,10 @@
   display: flex;
 }
 
+.add-form, .edit-form{
+  margin: 0 50%;
+  align-items: center;
+}
+
+
+
