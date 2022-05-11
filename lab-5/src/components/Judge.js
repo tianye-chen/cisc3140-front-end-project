@@ -14,10 +14,12 @@ export default function Judge(){
 
     const result = judge.map(judge=> <JudgeItem key={judge.Car_ids} judge={judge} />)
 
-    return(
+    return (
         <div>
-            <Link to={`/judge/add`} origin={"/judge"}><h3>Add Judge</h3></Link>
+            <Link to={`/judge/add`} state={{ origin: "/judge" }}>
+                <h3>Add Judge</h3>
+            </Link>
             {result}
         </div>
-    )
+    );
 }
