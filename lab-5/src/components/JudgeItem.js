@@ -5,7 +5,7 @@ export default function JudgeItem(props){
     const judge = props.judge
     
     return(
-        <Link to={`/judge/${judge.Car_ID}`} state={{judge:judge}}>
+        <Link to={`/judge/${judge.Car_ids}`} state={{judge:judge}}>
             <div className="car-item"> 
                 <p>Car ID: {judge.Car_ids}</p>
                 <p>&ensp;|&ensp;Judge ID: {judge.Judge_ID}</p>
