@@ -4,7 +4,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 export default function AddCar(){
     const location = useLocation()
     const navigate = useNavigate()
-    const origin = location.state
+    const {origin} = location.state
     const [time,setTime] = useState("")
     const [email,setEmail] = useState("")
     const [name,setName] = useState("")
