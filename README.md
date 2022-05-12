@@ -32,17 +32,17 @@ The command to install the following in order to run the project are shown below
     npm install react-router-dom
    ```
  * React-scripts
-  ```sh
-  npm install react-scripts
-  ```
+   ```sh
+   npm install react-scripts
+   ```
  * Axios
-  ```sh
-  npm install axios
-  ```
+   ```sh
+   npm install axios
+   ```
  * Web-vitals
-  ```sh
-  npm install web-vitals
-  ```
+   ```sh
+   npm install web-vitals
+   ```
 ## Setup
 Run the following command in /lab-5 directory:
 ```
