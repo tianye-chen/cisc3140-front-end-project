@@ -31,9 +31,6 @@ export default function EditJudge(){
                 navigate(origin)
             }}>
             <label>
-                Car ID:<input type="number" value={carID} onChange={e=>setCarID(e.target.value)} />
-            </label>
-            <label>
                 Judge ID:<input type="text" value={judgeID} onChange={e=>setJudgeID(e.target.value)} />
             </label>
             <label>

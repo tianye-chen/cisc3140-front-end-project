@@ -16,7 +16,7 @@ export default function AddJudge(){
 
 
     async function addJudge(){
-        fetch(`/car/add/${carID}/${judgeID}/${name}/${judged}/${start}/${end}/${spent}/${average}`)
+        fetch(`/judge/add/${carID}/${judgeID}/${name}/${judged}/${start}/${end}/${spent}/${average}`)
                 .then((res)=> res.json())
                 .catch((error) => console.log(error))
     }
